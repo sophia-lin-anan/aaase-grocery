@@ -4,6 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/aaase-grocery/', // Add this line - replace with your repo name
   plugins: [
     react(),
     VitePWA({
@@ -17,8 +18,8 @@ export default defineConfig({
         background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait',
-        scope: '/',
-        start_url: '/',
+        scope: '/aaase-grocery/', // Update this too
+        start_url: '/aaase-grocery/', // Update this too
         icons: [
           {
             src: 'pwa-64x64.png',
